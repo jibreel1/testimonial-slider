@@ -468,6 +468,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 976px) {
+  .container {
+    max-width: 976px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .mx-9 {
   margin-left: 2.25rem;
   margin-right: 2.25rem;
@@ -506,6 +536,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 4rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-80 {
   width: 20rem;
 }
@@ -520,6 +554,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-32 {
   width: 8rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-72 {
+  width: 18rem;
 }
 
 .flex-1 {
@@ -542,6 +592,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -562,6 +616,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-x-reverse: 0;
   margin-right: calc(3.5rem * var(--tw-space-x-reverse));
   margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-lg {
@@ -624,13 +682,14 @@ body {
 }
 
 main {
+  position: relative;
   background-image: url("../images/pattern-quotes.svg");
   background-repeat: no-repeat;
   background-size: 25%;
   background-position: 117px 404px;
 }
 
-main::before {
+body::before {
   content: "";
   position: absolute;
   background-image: url("../images/pattern-curve.svg");
@@ -656,6 +715,15 @@ main::before {
   box-shadow: 0 0px 42px hsl(240, 38%, 20%);
 }
 
+.carousel-track {
+  transition: transform 250ms ease-in-out;
+}
+
+/* .carousel-slide {
+   position: absolute;
+   width: 100%;
+} */
+
 @media (min-width: 768px) {
   body {
     background-size: 48%;
@@ -667,7 +735,7 @@ main::before {
     background-position: 243px 220px;
   }
 
-  main::before {
+  body::before {
     background-size: auto;
   }
 
@@ -701,11 +769,6 @@ main::before {
 
   .img-w {
     width: 57%;
-  }
-
-  .carousel {
-    right: 550px;
-    bottom: 100px;
   }
 
   .md\:mx-40 {

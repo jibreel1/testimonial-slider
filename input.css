@@ -10,13 +10,14 @@ body {
 }
 
 main {
+   position: relative;
    background-image: url("../images/pattern-quotes.svg");
    background-repeat: no-repeat;
    background-size: 25%;
    background-position: 117px 404px;
 }
 
-main::before {
+body::before {
    content: "";
    position: absolute;
    background-image: url("../images/pattern-curve.svg");
@@ -42,6 +43,15 @@ main::before {
    box-shadow: 0 0px 42px hsl(240, 38%, 20%);
 }
 
+.carousel-track {
+   transition: transform 250ms ease-in-out;
+}
+
+/* .carousel-slide {
+   position: absolute;
+   width: 100%;
+} */
+
 @media (min-width: 768px) {
    body {
       background-size: 48%;
@@ -53,7 +63,7 @@ main::before {
       background-position: 243px 220px;
    }
 
-   main::before {
+   body::before {
       background-size: auto;
    }
 
@@ -87,10 +97,5 @@ main::before {
 
    .img-w {
       width: 57%;
-   }
-
-   .carousel {
-      right: 550px;
-      bottom: 100px;
    }
 }

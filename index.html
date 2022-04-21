@@ -33,66 +33,68 @@
       </style>
    </head>
    <body class="font-Inter">
-      <main
-         class="h-screen flex flex-row justify-center items-center text-center mx-9"
-      >
+      <main class="overflow-hidden w-[80%] mx-auto">
          <div
-            class="flex flex-col-reverse justify-center mx-auto md:flex-row md:mx-40"
+            class="container relative h-screen flex flex-row justify-start items-center text-center carousel-track"
          >
-            <div class="img-tanya"></div>
             <div
-               class="flex flex-col justify-center text-center md:text-left space-y-6 flex-1 mt-20 md:mt-0"
+               class="flex flex-col-reverse md:flex-row md:mx-40 absolute w-full carousel-slide current-slide"
             >
+               <div class="img-tanya"></div>
                <div
-                  class="text-lg md:text-3xl text-darkBlue leading-normal font-light img-w w-80"
+                  class="flex flex-col justify-center text-center md:text-left space-y-6 flex-1 mt-20 md:mt-0"
                >
-                  “ I’ve been interested in coding for a while but never taken
-                  the jump, until now. I couldn’t recommend this course enough.
-                  I’m now in the job of my dreams and so excited about the
-                  future. ”
+                  <div
+                     class="text-lg md:text-3xl text-darkBlue leading-normal font-light img-w"
+                  >
+                     “ I’ve been interested in coding for a while but never
+                     taken the jump, until now. I couldn’t recommend this course
+                     enough. I’m now in the job of my dreams and so excited
+                     about the future. ”
+                  </div>
+                  <div class="md:flex md:space-x-3 text-lg md:text-sm">
+                     <p class="font-bold text-darkBlue">Tanya Sinclair</p>
+                     <p class="text-grayishBlue font-normal">UX Engineer</p>
+                  </div>
                </div>
-               <div class="md:flex md:space-x-3 text-lg md:text-sm">
-                  <p class="font-bold text-darkBlue">Tanya Sinclair</p>
-                  <p class="text-grayishBlue font-normal">UX Engineer</p>
+               <div class="flex justify-center flex-1 md:hidden">
+                  <img
+                     src="images/image-tanya.jpg"
+                     alt="Tanya"
+                     class="w-60 h-60 rounded-lg"
+                  />
                </div>
             </div>
-            <div class="flex justify-center flex-1 md:hidden">
-               <img
-                  src="images/image-tanya.jpg"
-                  alt="Tanya"
-                  class="w-60 h-60 rounded-lg"
-               />
-            </div>
-         </div>
 
-         <div
-            class="flex flex-col-reverse justify-center mx-auto md:flex-row md:mx-40 hidden"
-         >
-            <div class="img-john"></div>
             <div
-               class="flex flex-col justify-center text-center md:text-left space-y-6 flex-1 mt-20 md:mt-0"
+               class="flex flex-col-reverse absolute md:flex-row md:mx-40 w-full carousel-slide"
             >
+               <div class="img-john"></div>
                <div
-                  class="text-lg md:text-3xl text-darkBlue leading-normal font-light img-w w-80"
+                  class="flex flex-col justify-center text-center md:text-left space-y-6 flex-1 mt-20 md:mt-0"
                >
-                  “ If you want to lay the best foundation possible I’d
-                  recommend taking this course. The depth the instructors go
-                  into is incredible. I now feel so confident about starting up
-                  as a professional developer. ”
+                  <div
+                     class="text-lg md:text-3xl text-darkBlue leading-normal font-light img-w"
+                  >
+                     “ If you want to lay the best foundation possible I’d
+                     recommend taking this course. The depth the instructors go
+                     into is incredible. I now feel so confident about starting
+                     up as a professional developer. ”
+                  </div>
+                  <div class="md:flex md:space-x-3 text-lg md:text-sm">
+                     <p class="font-bold text-darkBlue">John Tarkpor</p>
+                     <p class="text-grayishBlue font-normal">
+                        Junior Front-end Developer
+                     </p>
+                  </div>
                </div>
-               <div class="md:flex md:space-x-3 text-lg md:text-sm">
-                  <p class="font-bold text-darkBlue">John Tarkpor</p>
-                  <p class="text-grayishBlue font-normal">
-                     Junior Front-end Developer
-                  </p>
+               <div class="flex justify-center flex-1 md:hidden">
+                  <img
+                     src="images/image-john.jpg"
+                     alt="John"
+                     class="w-60 h-60 rounded-lg"
+                  />
                </div>
-            </div>
-            <div class="flex justify-center flex-1 md:hidden">
-               <img
-                  src="images/image-john.jpg"
-                  alt="John"
-                  class="w-60 h-60 rounded-lg"
-               />
             </div>
          </div>
       </main>
@@ -100,10 +102,10 @@
       <div
          class="flex items-center justify-center flex-row w-20 h-10 bg-white rounded-full space-x-8 carousel-mobile md:hidden"
       >
-         <button class="">
+         <button class="btn1">
             <img src="/images/icon-prev.svg" alt="prev" />
          </button>
-         <button class="">
+         <button class="btn2">
             <img src="/images/icon-next.svg" alt="next" />
          </button>
       </div>
