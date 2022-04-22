@@ -70,7 +70,7 @@ body::before {
    .img-tanya {
       position: absolute;
       top: 50%;
-      right: 196px;
+      right: 145px;
       transform: translateY(-50%);
       background-image: url("../images/image-tanya.jpg");
       background-repeat: no-repeat;
@@ -84,7 +84,7 @@ body::before {
    .img-john {
       position: absolute;
       top: 50%;
-      right: 196px;
+      right: 145px;
       transform: translateY(-50%);
       background-image: url("../images/image-john.jpg");
       background-repeat: no-repeat;
